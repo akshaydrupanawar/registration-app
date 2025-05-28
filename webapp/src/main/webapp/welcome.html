@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome</title>
+</head>
+<body>
+  <h1 id="welcomeMsg"></h1>
+
+  <script>
+    const username = sessionStorage.getItem("username");
+    if (username) {
+      document.getElementById("welcomeMsg").textContent = `Welcome ${username} to My Registration App!`;
+    } else {
+      document.getElementById("welcomeMsg").textContent = "Invalid Access!";
+    }
+  </script>
+</body>
+</html>
